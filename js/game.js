@@ -26,7 +26,7 @@ function Game() {
     this.startGame = function () {
         this.idSetInterval = setInterval(function () {
             self.movePlayer();
-        }, 250);
+        }, 350);
     }
 
     this.movePlayer = function () {
