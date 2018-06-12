@@ -87,6 +87,8 @@ function Game() {
 
             var over = document.querySelector("#over");
             over.classList.remove("invisible");
+            var scoreGameOver = document.querySelector("#over .score .result");
+            scoreGameOver.innerText = counter++ - 1;
             return true;
         }
         return false;
