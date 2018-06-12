@@ -5,11 +5,11 @@ Game in JavaScript
 *Use arrow keys to move
 *Collect a prawn
 
-![alt "Summer-Game"](https://github.com/sfait/Comics-Shop/blob/master/images/comics-shop.png "Summer-Game")
+![alt "Summer-Game"](https://github.com/sfait/Summer-Game/blob/master/images/summer-game.png "Summer-Game")
 
 **Technologies:**
 * HTML
 * CSS
 * JavaScript
 
-**Link:** 
+**Link:** https://sfait.github.io/Summer-Game/
