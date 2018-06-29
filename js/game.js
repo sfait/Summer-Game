@@ -1,9 +1,10 @@
-var Player = require("./player.js");
-var Item = require("./item.js");
+import {Player} from "./player.js";
+import {Item} from "./item.js";
+
 
 function Game() {
-    var self = this;
-    var counter = 1;
+    const self = this;
+    let counter = 1;
 
     this.board = document.querySelectorAll("#board div");
     this.score = document.querySelector(".score .result");
@@ -24,6 +25,8 @@ function Game() {
     }
 
     this.startGame = function () {
+        this.showPlayer();
+        this.showItem();
         this.idSetInterval = setInterval(function () {
             self.movePlayer();
         }, 350);
@@ -46,7 +49,7 @@ function Game() {
     }
 
     this.hideVisiblePlayer = function () {
-        var divPlayer = document.querySelector(".player");
+        const divPlayer = document.querySelector(".player");
         divPlayer.classList.remove("player");
     }
 
@@ -69,9 +72,9 @@ function Game() {
 
     this.checkItemCollision = function () {
         if (this.player.x === this.item.x && this.player.y === this.item.y) {
-            var divItem = document.querySelector(".item");
+            const divItem = document.querySelector(".item");
             divItem.classList.remove("item");
-            var score = document.querySelector(".score .result");
+            const score = document.querySelector(".score .result");
             score.innerText = counter++;
             this.item = new Item();
             this.showItem();
@@ -85,9 +88,9 @@ function Game() {
             clearInterval(this.idSetInterval);
             this.hideVisiblePlayer();
 
-            var over = document.querySelector("#over");
+            const over = document.querySelector("#over");
             over.classList.remove("invisible");
-            var scoreGameOver = document.querySelector("#over .score .result");
+            const scoreGameOver = document.querySelector("#over .score .result");
             scoreGameOver.innerText = counter++ - 1;
             return true;
         }
@@ -95,5 +98,4 @@ function Game() {
     }
 }
 
-
-module.exports = Game;
+export {Game}

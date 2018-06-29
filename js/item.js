@@ -3,4 +3,4 @@ function Item() {
     this.y = Math.floor(Math.random() * 10);
 }
 
-module.exports = Item;
+export {Item}

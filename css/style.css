@@ -18,6 +18,8 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background: url("../images/image.jpg") no-repeat center center fixed;
     background-size: cover;
 }
@@ -25,7 +27,7 @@ body {
 #board {
     width: 640px;
     height: 640px;
-    margin: 20px 50px 10px 200px;
+    margin: 15px 50px 0 200px;
     float: left;
 }
 
@@ -51,8 +53,8 @@ body {
 
 .right-content {
     width: 200px;
-    height: 400px;
-    margin: 50px 10px;
+    height: 300px;
+    margin: 15px;
     font-size: 20px;
     font-weight: bold;
     color: white;

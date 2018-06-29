@@ -1,8 +1,6 @@
-var Game = require("./game.js");
+import {Game} from "./game.js";
 
-var game = new Game();
-game.showPlayer();
-game.showItem();
+const game = new Game();
 game.startGame();
 
 document.addEventListener("keydown", function (event) {

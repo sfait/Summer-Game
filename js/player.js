@@ -4,4 +4,4 @@ function Player() {
     this.direction = "direction";
 }
 
-module.exports = Player;
+export {Player}
